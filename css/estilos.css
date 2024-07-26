@@ -1,0 +1,1310 @@
+:root{
+	--rojo-sk:#217f16;
+	--gris-sk:#f2f2f2;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #000;
+}
+::selection {
+    color: #fff;
+    background: #000;
+}
+
+html{font-size:100%;}
+
+*{font-family: 'Spectral', serif;}
+
+
+
+
+/* BARRA DE SCROLL*/
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+
+a{
+	text-decoration:none !important;
+	color:#000000 !important;
+	transition: 0.3s;
+}
+a:hover{
+	text-decoration:none;
+	color: var(--rojo-sk) !important;
+}
+
+#comentario .cita{width:40% !important}
+#comentario .cita blockquote{font-size:1.08rem !important; font-weight:600 !important;}
+
+
+.termsfeed-com---palette-light.termsfeed-com---nb{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	font-family:Verdana !important;
+	
+}
+
+.termsfeed-com---nb .cc-nb-main-container{
+	padding:1.5rem 3rem !important;
+}
+
+.cc-nb-title-container{display:none !important}
+
+.termsfeed-com---palette-light .cc-nb-buttons-container button, .termsfeed-com---palette-light .cc-cp-foot-save{
+	background-color: var(--rojo-sk) !important;
+	color:#fff !important;
+	border-radius:25px;
+	font-family:'Zen Kaku Gothic Antique' !important;
+}
+
+.termsfeed-com---palette-light .cc-nb-buttons-container .cc-nb-reject, .termsfeed-com---palette-light .cc-nb-buttons-container .cc-nb-changep{
+	background-color: #0b7d0f !important;
+}
+
+.termsfeed-com---pc-dialog input[type=checkbox].cc-custom-checkbox:checked+label:before{
+	background: var(--rojo-sk) !important;
+}
+
+
+.boton{
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	text-transform:uppercase;
+	letter-spacing:0.31rem;
+	font-weight:700;
+	font-size:1rem;
+}
+
+.boton-transparente{
+	border:0.125rem solid #000000;
+	padding:0.625rem 1.25rem;
+	border-radius:1.56rem;
+}
+
+.boton-transparente:hover{
+	border:0.125rem solid #000000;
+	background:#000;
+	color:#fff !important;
+}
+
+.boton-transparente-blanco{
+	border:0.125rem solid #fff;
+	padding:0.625rem 1.25rem;
+	border-radius:1.56rem;
+	color:#fff !important;
+}
+
+.boton-transparente-blanco:hover{
+	border:0.125rem solid #fff;
+	background:#fff;
+	color:#000 !important;
+}
+
+.boton-negro{
+	border:0.125rem solid #000000;
+	background:#000;
+	padding:0.625rem 1.25rem;
+	border-radius:1.56rem;
+	color:#fff !important;
+}
+
+.boton-negro:hover{
+	border:0.125rem solid #000;
+	background:#fff;
+	color:#000 !important;
+}
+
+.boton-amarillo{
+	border:0.125rem solid #f0b830;
+	background:#f0b830;
+	padding:0.625rem 1.25rem;
+	border-radius:1.56rem;
+	color:#000 !important;
+}
+
+.boton-amarillo:hover{
+	border:0.125rem solid #e4a50d;
+	background:#e4a50d;
+	color:#000 !important;
+}
+
+
+header{
+	width:100%;
+	position:absolute;
+	top:0px;
+	z-index:9998;
+	padding: 1.25rem 0 0.9375rem;
+	background: linear-gradient(to bottom, black, transparent);
+}
+
+header #logotipo{
+	font-family: 'Spectral', serif;
+	font-weight:600;
+	font-size:2.5rem;
+	line-height:2.1875rem;
+}
+
+header #logotipo a{
+	color:#ffffff !important;
+}
+
+header #logotipo a:hover{
+	color:var(--rojo-sk) !important;
+}
+
+header #logotipo #stephen{
+	font-size:1.8125rem;
+	margin-left:0.25rem;
+}
+
+header #logotipo #king{
+	font-size:3.4375rem;
+}
+
+header #menu{
+	text-align:right;
+	color:#ffffff !important;
+	font-family: 'Voltaire', sans-serif;
+	letter-spacing:0.1875rem;
+}
+
+header #menu ul{
+	display:inline;
+}
+
+header #menu ul li{
+	display:inline;
+	font-weight:600;
+	font-size:0.85rem;
+	padding:0 0.6375rem;
+}
+
+header #menu ul li a{
+	color:#fff !important;
+}
+
+header #menu ul li a:hover{
+	color:var(--rojo-sk) !important;
+	
+}
+
+
+#franja-buscador{
+	display:none;
+	background:var(--rojo-sk);
+	width:100%;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	padding:3rem 1.5rem;
+	border-bottom:1px solid var(--gris-sk);
+	z-index:9998;
+	color:#fff;
+}
+
+
+
+#franja-buscador input[type=text]{
+	border:0px;
+	width:90%;
+	text-align:center;
+	outline:none;
+	border-bottom:1px solid #fff;
+	padding:0.5rem;
+	background:transparent;
+	color:#fff;
+	font-size:1.5rem;
+}
+
+#franja-buscador input[type=text]::placeholder{
+	color:#fff;
+}
+
+#franja-buscador a{color:#fff !important;}
+
+#lupa-buscar-movil a{color:#fff !important; font-size:1.4rem; margin-right:1rem; }
+
+
+
+
+
+.cabecera-fija{
+	position:fixed;
+	z-index:9998;
+	padding:0.625rem 0 0;
+	background:#000000;
+}
+
+.cabecera-fija #logotipo{
+	line-height:1.625rem;
+}
+
+.cabecera-fija #logotipo #stephen{
+	font-size:1.25rem;
+	margin-left:0.1875rem;
+}
+
+.cabecera-fija #logotipo #king{
+	font-size:2.375rem;
+}
+
+.cabecera-fija #menu{
+	margin-top:-0.625rem;
+}
+
+
+
+
+.hero-slider .swiper-container-horizontal > .swiper-pagination-bullets{
+	bottom:80px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+#anuncio-lanzamiento{
+	background-image:url('../img/fondo-rayas.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	
+	background-color:#fff;
+	padding:40px 0px 40px 0px;
+	text-align:center;
+}
+
+#anuncio-lanzamiento .titulo{
+	font-size:55px;
+	font-weight:400;
+	letter-spacing: 0px;
+	margin:0;
+}
+
+#anuncio-lanzamiento .fecha{
+	font-size:22px;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	font-weight:500;
+	letter-spacing: 8px;
+}
+
+#anuncio-lanzamiento .autor{
+	color: #127d20;
+	font-weight:900;
+	font-size:32px;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	letter-spacing: 10px;
+}
+
+#anuncio-lanzamiento .autor span{
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	font-size:18px;
+	color:#000000;
+}
+
+
+
+
+
+
+
+
+
+
+/****************************************************/
+/* LO MÃS RECIENTE */
+/****************************************************/
+
+#ultimos-libros{
+	background:var(--gris-sk);
+	padding:3.75rem 0;
+}
+
+#ultimos-libros h2{
+	text-align:center;
+	font-family: 'Spectral', serif;
+	font-weight:700;
+	font-size:3.125rem;
+	letter-spacing: -0.1875rem;
+	margin-bottom:0;
+}
+
+#ultimos-libros h3{
+	text-align:center;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	font-size:1.25rem;
+	font-weight:500;
+	color:var(--rojo-sk);
+	letter-spacing:0.3125rem;
+	margin-bottom:2.5rem;
+}
+
+
+
+/****************************************************/
+/* MINI BIO */
+/****************************************************/
+
+#mini-bio p{
+	font-size:1.125rem;
+}
+
+#mini-bio h2{
+	text-align:center;
+	font-family: 'Spectral', serif;
+	font-weight:700;
+	font-size:3.125rem;
+	letter-spacing: -0.1875rem;
+	margin-bottom:0;
+}
+
+#mini-bio h3{
+	text-align:center;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	font-size:1.25rem;
+	font-weight:500;
+	color:var(--rojo-sk);
+	letter-spacing:0.3125rem;
+	margin-bottom:2.5rem;
+}
+
+/****************************************************/
+/* CONTADORES */
+/****************************************************/
+
+
+#contadores{
+	text-align:center;
+	padding:4.375rem 0;
+	border-top:1px solid var(--gris-sk);
+}
+
+#contadores .elemento{padding:0.625rem; border-radius:0.625rem;}
+
+#contadores .elemento:hover{background:var(--gris-sk); }
+
+#contadores .lit{
+	text-align:center;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif ;
+	font-size:1rem;
+	letter-spacing: 0.3125rem;
+	font-weight:500;
+}
+
+#contadores .num{
+	font-size:1rem;
+	font-weight:900;
+	border-radius:0.9375rem;
+	padding:0 0.3125rem 0.125rem;
+	text-align:center;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif ;
+}
+
+
+/****************************************************/
+/* FRANJA YOUTUBE */
+/****************************************************/
+#franja-youtube{
+	padding:80px 30px;
+}
+
+#franja-youtube h2{
+	font-family: 'Spectral', serif;
+	font-weight:700;
+	font-size:2.125rem;
+	letter-spacing: -0.1475rem;
+	margin-bottom:0;
+}
+
+#franja-youtube h3{
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	font-size:1rem;
+	font-weight:700;
+	color:var(--rojo-sk);
+	letter-spacing:0.2125rem;
+	margin-bottom:2px;
+}
+
+
+/****************************************************/
+/* REVISTA INSOMNIA */
+/****************************************************/
+
+#revista-insomnia{
+	background:var(--gris-sk);;
+}
+
+#revista-insomnia #contenedor-texto{
+	padding:50px 30px;
+}
+
+#revista-insomnia #contenedor-texto figcaption{
+	text-align:center;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif ;
+	color:#000;
+}
+
+#revista-insomnia h2{
+	text-align:center;
+	font-family: 'Spectral', serif;
+	font-weight:700;
+	font-size:3.125rem;
+	letter-spacing: -0.1875rem;
+	margin-bottom:0;
+	color:#000;
+}
+
+#revista-insomnia h3{
+	text-align:center;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	font-size:1.25rem;
+	font-weight:500;
+	color:var(--rojo-sk);
+	letter-spacing:0.3125rem;
+	margin-bottom:2.5rem;
+}
+
+
+/****************************************************/
+/* CONSEJOS KING */
+/****************************************************/
+
+#consejos-king{
+	padding-top:3.75rem;
+}
+
+
+#consejos-king h2{
+	text-align:center;
+	font-family: 'Spectral', serif;
+	font-weight:700;
+	font-size:3.125rem;
+	letter-spacing: -0.1875rem;
+	margin-bottom:0;
+}
+
+#consejos-king h3{
+	text-align:center;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	font-size:1.25rem;
+	font-weight:500;
+	color:var(--rojo-sk);
+	letter-spacing:0.3125rem;
+	margin-bottom:2.5rem;
+}
+
+#consejos-king .consejo .caja-texto{
+	display: flex;
+	
+  align-items: flex-start;
+}
+
+#consejos-king .consejo .numero{
+	font-size:9rem;
+	padding:1.4rem 1.4rem 1.4rem 3rem;
+	align-self: center;
+}
+
+#consejos-king .consejo .texto{
+	padding:1.4rem;
+	align-self: center;
+}
+
+#consejos-king .consejo h4{
+	font-size:2.3rem;
+}
+
+#consejos-king .consejo p{
+	font-size:1.5rem;
+}
+
+#consejos-king .consejo-negro{
+	background:#000;
+	color:#fff;
+}
+
+#consejos-king .consejo-gris{
+	background:var(--gris-sk);
+	color:#000;
+}
+
+#consejos-king .consejo-rojo{
+	background:var(--rojo-sk);
+	color:#fff;
+}
+
+#franja-kinglopedia{
+	
+	background-image:url('../img/fondo-kinglopedia.jpg');
+	background-size:cover;
+	padding:150px 0 150px 0;
+	color:#000000;
+	text-align:center;
+}
+
+#franja-kinglopedia img{
+	max-width: 750px;
+	width:100%;
+}
+
+#franja-kinglopedia p{
+	font-size:1.25rem;
+	margin:1.25rem;
+	margin-bottom:2.25rem;
+	color:#fff;
+}
+
+#franja-mientras-escribo{
+	
+	background-image:url('../img/fondo-rayas-blancas.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	
+	background-color:#f2f2f2;
+	padding:50px 0 50px 0;
+	color:#000000;
+	text-align:center;
+}
+
+#franja-mientras-escribo h3{
+	font-size:66px;
+	font-weight:700;
+	letter-spacing: -5px;
+	margin:0;
+}
+
+#franja-mientras-escribo h4{
+	text-align:center;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	font-size:1.25rem;
+	font-weight:500;
+	color:var(--rojo-sk);
+	letter-spacing:0.3125rem;
+	margin-bottom:2.5rem;
+}
+
+
+#franja-mientras-escribo p{
+	font-size:25px;
+}
+
+#franja-mientras-escribo .boton{
+	margin-top:40px;
+}
+
+
+/****************************************************/
+/* NEWSLETTER */
+/****************************************************/
+
+#newsletter{
+	padding:3.75rem 0 0;
+	text-align:center;
+}
+
+#newsletter h2{
+	font-family: 'Spectral', serif;
+	font-weight:700;
+	font-size:2.5rem;
+	letter-spacing: -0.1875rem;
+	color:#000;
+}
+
+#newsletter h3{
+	margin-top:-1.875rem;
+	font-family: 'Spectral', serif;
+	font-weight:700;
+	font-size:4.375rem;
+	letter-spacing: -0.1875rem;
+	color:var(--rojo-sk);
+}
+
+#newsletter p{
+	font-size:1.125rem;
+}
+
+#newsletter img{width:350px;}
+
+
+/****************************************************/
+/* PIE (FOOTER) */
+/****************************************************/
+
+#foto-mansion{position:relative;}
+
+footer{
+	background:#000;
+	padding:2rem 0 0.625rem;
+	color:#fff;
+	text-align:center;
+	
+}
+
+footer a{
+	color:#fff !important;
+}
+
+footer h5{
+	font-family: 'Spectral', serif;
+	font-weight:500;
+	font-size:1.25rem;
+	letter-spacing: -0.0625rem;
+	margin-bottom:0.9375rem;
+}
+
+footer ul{
+	dislay:block;
+	padding-left: 0;
+}
+
+footer ul li{
+	font-size:1rem;
+	list-style:none;
+	padding:0.3125rem 0;
+}
+
+footer #fila-copyright{
+	border-top:0.0625rem solid #191919;
+}
+
+footer #fila-copyright .claim{
+	font-size:0.8rem;
+}
+
+footer #copyright{
+	font-size:0.75rem;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	text-transform:uppercase;
+	letter-spacing:0.3125rem;
+}
+
+.titulo-seccion h1{
+	font-weight:700;
+	font-size:2.8125rem;
+	letter-spacing: -0.1875rem;
+	
+}
+			
+.titulo-seccion .subseccion{
+	font-size:1.875rem;
+	color:#777;
+}
+			
+
+
+.nota-media{
+	width:100%;
+	max-width:180px;
+	margin-bottom:15px;
+	font-size:13px;
+}
+
+.nota-media .nota-icono{
+	margin-top:-3px;
+}
+
+.nota-media .fa-star, .nota-media .fa-star-half-stroke{
+	color:var(--rojo-sk);
+	
+}
+
+
+
+
+.loading-page {
+  background: #0d0d0d;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	position:fixed;
+	top:0px;
+	z-index:99999 !important;
+}
+.loading-page .counter {
+  text-align: center;
+}
+.loading-page .counter p {
+	font-family: 'Zen Kaku Gothic Antique', sans-serif ;
+  font-size: 0.9rem;
+	letter-spacing:0.3125rem;
+	text-transform:uppercase;
+  font-weight: 500;
+  color: rgb(14, 150, 9);
+}
+.loading-page .counter h1 {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  margin-top: -10px;
+}
+.loading-page .counter hr {
+  background: rgb(14, 150, 9);
+  border: none;
+  height: 1px;
+}
+.loading-page .counter {
+  position: relative;
+  width: 200px;
+}
+.loading-page .counter h1.abs {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.loading-page .counter .color {
+  width: 0px;
+  overflow: hidden;
+  color: rgb(14, 150, 9);
+}
+
+
+
+
+
+/* OBRAS */
+
+.sidebar-fijo{
+	position:fixed !important;
+	width:100%;
+	top:78px;
+	left:0;
+	padding:0 10px !important;
+	z-index:9998;
+	background:#ffffff !important;
+}
+
+.menu-sticky{
+	position:sticky;
+	top:6.25rem;
+	list-style:none;
+}
+
+#navegacion-sidebar{
+	border-right:0.0625rem solid #ccc;
+	padding:0 1.218rem 0 0;
+	
+}
+
+#navegacion-sidebar .menu {
+	list-style:none;
+}
+
+#navegacion-sidebar .menu .epigrafe{
+	font-weight:700;
+	font-size:1.25rem;
+}
+
+#navegacion-sidebar li{
+	padding:0.3125rem;
+	text-align:right;
+	font-size:1rem;
+}
+
+#navegacion-sidebar li a:hover{
+	color:var(--rojo-sk) !important;
+}
+
+.apartado-obra{
+	padding:2.5rem 0 0;
+}
+
+.apartado-obra h2{
+	font-size:1.5625rem;
+	margin-bottom:1.25rem;
+}
+
+.franja-resultados{
+	border-top:0.0625rem solid var(--gris-sk);
+	border-bottom:0.0625rem solid var(--gris-sk);
+	margin:1.875rem 0 0.9375rem; 
+	padding:0.4375rem 0;
+	font-size:1rem;
+}
+
+.botones-orden-listado{
+	font-size:1rem;
+	text-align:right;
+}
+
+#resultado-obras p, #resultado-obras table{
+	font-size:1rem;
+}
+
+.lit-proximamente{
+	color:var(--rojo-sk);
+	font-size:0.9rem;
+	font-weight:700;
+}
+
+.etiqueta-tema{border:1px solid var(--gris-sk); border-radius:3px; padding:4px 10px; margin:2px 4px 2px 0px;}
+.etiqueta-tema:hover{background:var(--gris-sk)}
+.etiqueta-tema a:hover{color:#000 !important}
+
+
+/* AGENDA */
+
+#contenedor-agenda .categoria{
+	font-size:0.8rem;
+	margin:0 0 0.4rem;
+	text-transform:uppercase;
+}
+
+#contenedor-agenda .fecha{
+	color: var(--rojo-sk);
+	font-family: 'Zen Kaku Gothic Antique', sans-serif ;
+	letter-spacing:0.3125rem;
+	font-size:0.9rem;
+	font-weight:700;
+}
+
+
+
+/* EL AUTOR*/
+
+#bio-informacion-general #foto-king-bio{width:50%;}
+
+
+/* RESPONSIVE */
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 414px) {
+	header #menu ul li{
+		font-size:25px;
+	}
+	.botones-orden-listado{
+		text-align:left !important;
+	}
+	
+	#newsletter h2{
+		font-size:30px !important;
+		letter-spacing: -3px;
+		
+	}
+
+	#newsletter h3{
+		margin-top:-30px;
+		font-size:50px !important;
+		letter-spacing: -3px;
+		
+	}
+	
+	#bio-informacion-general #foto-king-bio{width:100% !important;}
+	
+}
+
+
+@media only screen and (max-width: 424px) {
+	.botones-orden-listado{
+		text-align:left !important;
+	}
+	#bio-informacion-general #foto-king-bio{width:100%;}
+}
+
+@media only screen and (max-width: 540px) {
+	.botones-orden-listado{
+		text-align:left !important;
+	}
+	#bio-informacion-general #foto-king-bio{width:100% !important;}
+	
+}
+
+
+@media only screen and (max-width: 576px) {
+
+	#newsletter{
+		text-align:center;
+		padding:40px 0px;
+	}
+	
+	#newsletter h2{
+		font-size:35px;
+		letter-spacing: -3px;
+		color:#000;
+	}
+
+	#newsletter h3{
+		margin-top:-20px;
+		font-family: 'Spectral', serif;
+		font-weight:700;
+		font-size:45px;
+		letter-spacing: -3px;
+	}
+	
+	.titulo-seccion h1{
+		font-size:35px;
+		letter-spacing: -3px;
+		
+	}
+				
+	.titulo-seccion .subseccion{
+		font-size:20px;
+		color:#777;
+	}
+				
+	.titulo-seccion .separador-subseccion{
+		color:#0e6d0d;
+		margin:0px 8px 0 10px;
+		position:relative; 
+		top:-1px;
+	}
+	
+	.slider-seccion{
+		margin-bottom:0px !important;
+	}
+	
+	footer{text-align:center}
+	
+	#bio-informacion-general #foto-king-bio{width:100%;}
+	
+}
+
+@media only screen and (max-width: 768px) {
+	
+	
+	#consejos-king .consejo .caja-texto{
+		flex-direction: column;
+		text-align:center;
+	}
+	
+	#consejos-king .consejo .numero{
+		font-size:6rem;
+		padding:1.4rem 0 0;
+	}
+
+	#consejos-king .consejo .texto{
+		padding:1.4rem;
+	}
+	
+	#franja-mientras-escribo h3{
+		font-size:3.125rem;
+	}
+	
+	
+	header{
+		position:fixed !important;
+		z-index:9998;
+		padding: 10px 0px 0px 0px;
+		background:#000000;
+	}
+
+	header #logotipo{
+		line-height:26px;
+	}
+
+	header #logotipo #stephen{
+		font-size:20px;
+		margin-left:3px;
+	}
+
+	header #logotipo #king{
+		font-size:38px;
+	}
+	
+	header #menu ul{
+		display:block;
+		position:absolute;
+		top: 50%; left: 50%; transform: translate(-50%, -50%);
+		padding:0px;
+	}
+	
+	header #menu ul li{
+		display:block;
+		
+		font-weight:600;
+		font-size:30px !important;
+		padding:0px;
+		text-align:center;
+	}
+	
+	header #menu #menu-suscribete{
+		display:none;
+	}
+	
+	header nav{
+		display:none;
+		width:100%;
+		height:100%;
+		background:#000;
+		position:fixed;
+		top:10px;
+		left:0;
+		z-index:9998;
+		
+	}
+	
+	#menu-lupa-buscar{display:none !important}
+	
+	.cabecera-fija #menu{
+		margin-top:0px
+	}
+	
+	
+	.hamburger .line{
+		width: 30px;
+		height: 3px;
+		background-color: #ecf0f1;
+		display: block;
+		margin: 7px auto;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.hamburger:hover{
+		cursor: pointer;
+	}
+
+	/* ONE */
+	
+	#hamburger-1{
+		position:relative;
+		z-index:9999;
+		bottom:3px
+	}
+
+	#hamburger-1.is-active .line:nth-child(2){
+		opacity: 0;
+	}
+
+	#hamburger-1.is-active .line:nth-child(1){
+		-webkit-transform: translateY(10px) rotate(45deg);
+		-ms-transform: translateY(10px) rotate(45deg);
+		-o-transform: translateY(10px) rotate(45deg);
+		transform: translateY(10px) rotate(45deg);
+	}
+
+	#hamburger-1.is-active .line:nth-child(3){
+		-webkit-transform: translateY(-10px) rotate(-45deg);
+		-ms-transform: translateY(-10px) rotate(-45deg);
+		-o-transform: translateY(-10px) rotate(-45deg);
+		transform: translateY(-10px) rotate(-45deg);
+	}
+
+	
+	
+	.slider-seccion{margin-top:78px}
+	
+	
+	#navegacion-sidebar{
+		border-right:0px !important;
+		padding:0px;
+	}
+	
+	
+	
+	#newsletter h2{
+		font-size:40px;
+		letter-spacing: -3px;
+		
+	}
+
+	#newsletter h3{
+		margin-top:-30px;
+		font-size:60px;
+		letter-spacing: -3px;
+		
+	}
+	
+	#newsletter img{width:250px;}
+	
+	#bio-informacion-general #foto-king-bio{width:100%;}
+	
+	#franja-youtube{text-align:center}
+	
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+	header{
+		position:fixed !important;
+		padding: 10px 0px 0px 0px;
+		background:#000000;
+	}
+
+	header #logotipo{
+		line-height:26px;
+	}
+
+	header #logotipo #stephen{
+		font-size:20px;
+		margin-left:3px;
+	}
+
+	header #logotipo #king{
+		font-size:38px;
+	}
+	
+	header #menu ul{
+		display:block;
+		position:absolute;
+		top: 50%; left: 50%; transform: translate(-50%, -50%);
+		padding:0px;
+	}
+	
+	header #menu ul li{
+		display:block;
+		
+		font-weight:600;
+		font-size:30px !important;
+		padding:0px;
+		text-align:center;
+	}
+	
+	header #menu #menu-suscribete{
+		display:none;
+	}
+	
+	header nav{
+		display:none;
+		width:100%;
+		height:100%;
+		background:#000;
+		position:fixed;
+		top:10px;
+		left:0;
+		z-index:9999;
+		
+	}
+	
+	.cabecera-fija #menu{
+		margin-top:0px
+	}
+	
+	.hamburger .line{
+		width: 30px;
+		height: 3px;
+		background-color: #ecf0f1;
+		display: block;
+		margin: 7px auto;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.hamburger:hover{
+		cursor: pointer;
+	}
+
+	/* ONE */
+	
+	#hamburger-1{
+		/*position:fixed;
+		z-index:9999;
+		top:20px;
+		right:15px;*/
+	}
+
+	#hamburger-1.is-active .line:nth-child(2){
+		opacity: 0;
+	}
+
+	#hamburger-1.is-active .line:nth-child(1){
+		-webkit-transform: translateY(10px) rotate(45deg);
+		-ms-transform: translateY(10px) rotate(45deg);
+		-o-transform: translateY(10px) rotate(45deg);
+		transform: translateY(10px) rotate(45deg);
+	}
+
+	#hamburger-1.is-active .line:nth-child(3){
+		-webkit-transform: translateY(-10px) rotate(-45deg);
+		-ms-transform: translateY(-10px) rotate(-45deg);
+		-o-transform: translateY(-10px) rotate(-45deg);
+		transform: translateY(-10px) rotate(-45deg);
+	}
+	
+	#anuncio-lanzamiento{
+		top:-20px;
+	}
+	
+	
+	#bio-informacion-general #foto-king-bio{width:50%}
+	
+	#comentario .cita{width:100% !important}
+	#comentario .cita blockquote{font-size:1rem !important; font-weight:600 !important;}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1280px) {
+	header #menu ul li{
+		padding:0px 8px;
+		font-size:12px;
+	}
+	
+	.header-homeslider #menu ul li{
+		font-size:12px;
+		padding:0px 7px;
+	}
+	
+	#anuncio-lanzamiento{
+		padding:90px 0px 60px 0px;
+	}
+	
+	#anuncio-lanzamiento .titulo{
+		font-size: 58px;
+	}
+	
+	
+}
+
+@media only screen and (min-width: 1366px) {
+	header #menu ul li{
+		padding:0px 7px;
+		font-size:0.75rem !important;
+	}
+	
+}
+
+@media only screen and (min-width: 1440px) {
+	#anuncio-lanzamiento .titulo{
+		font-size: 66px;
+	}
+	
+}
+
+
+@media only screen and (min-width: 1920px) {
+	.hero-style{height:920px !important;}
+	.hero-slider .swiper-container-horizontal > .swiper-pagination-bullets{
+		bottom:120px !important;
+	}
+}
