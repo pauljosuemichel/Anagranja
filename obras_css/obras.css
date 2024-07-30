@@ -1,0 +1,26 @@
+header{
+	position:relative;
+	padding: 6px 0px 0px 0px;
+	background:#000000;
+}
+
+header #logotipo{
+	line-height:26px;
+}
+
+header #logotipo #stephen{
+	font-size:20px;
+	margin-left:3px;
+}
+
+header #logotipo #king{
+	font-size:38px;
+}
+
+
+
+
+			
+header #menu{
+	margin-top:-10px;
+}

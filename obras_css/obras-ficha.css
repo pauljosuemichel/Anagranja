@@ -1,0 +1,76 @@
+h1{margin:0px;}
+
+.migas{margin-bottom:10px;}
+
+#estrellas, #estrellas-movil{font-size:12px; padding:0px 0px 15px 0px; cursor:pointer;}
+.estrella-naranja{color:orange !important}
+
+
+
+
+.offcanvas{z-index:9999 !important;}
+
+.badge a{color:#fff !important; font-size:14px; font-weight:300}
+.badge:hover{background:#CD3A3A !important;}
+
+.slider-seccion{
+	margin-bottom:20px;
+}
+
+#articulos .articulo a{
+	font-size:18px;
+}
+
+#articulos .articulo a:hover{
+	color:#CD3A3A !important;
+}
+
+#articulos .articulo p{
+	color:#777777;
+}
+
+.menu-wrapper {
+	overflow: hidden;
+	height: 54px;
+	margin-bottom:25px;
+	border-bottom:1px solid #ccc;
+}
+
+.menu-wrapper .menu {
+	background-color: #fff;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	height: 69px;
+	/*border:1px solid blue;*/
+}
+.menu-wrapper .menu > li {
+	display: table-cell;
+	vertical-align: middle;
+}
+.menu-wrapper .menu > li > a {
+	display: block;
+	text-decoration: none;
+	color: #333333;
+	font-size: 18px;
+	padding: 7px 20px 0 0;
+}
+.menu-wrapper--special {
+	position: relative;
+}
+.menu-wrapper--special::after {
+	content: "";
+	background: #F4F4F4;
+	background: linear-gradient(to right, rgba(244, 244, 244, 0), #ffffff 65%);
+	height: 100%;
+	width: 72px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.menu-wrapper--special .menu > li:last-child a {
+	padding-right: 50px;
+}
