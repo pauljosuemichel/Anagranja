@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>M. E. Michel</title>
+    <title>M. E. Michel | Blog</title>
     <meta name="description" content="Sitio web en español dedicado al escritor M.E.M.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -32,6 +32,9 @@
     <link rel="stylesheet" href="css/home.css">
 
 </head>
+<section id="slider-obra" class="slider-seccion">
+    <img src="img/roble.jpg" width="100%" alt="Biografía de Stephen King">
+</section>
 
 <body>
     <!-- Intro con cargador de página-->
@@ -50,7 +53,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-10 col-sm-2">
-                    <p id="logotipo"><a><span id="stephen">M. E.</span><br><span id="king">Michel</span></a></p>
+                    <p id="logotipo"><a><span id="stephen">Cinco</span><br><span id="king">Robles</span></a></p>
                 </div>
                 <div class="col-2 col-sm-10 align-self-center">
                     <nav id="menu">
@@ -84,6 +87,7 @@
                     <p id="logotipo"><a href="home.html"><span id="stephen">M. E.</span><br><span
                                 id="king">MICHEL</span></a></p>
                 </div>
+                <br>
                 <div class="col-2 col-sm-9 align-self-center">
                     <nav id="menu">
                         <ul>
@@ -130,7 +134,7 @@
                         <h3>Relatos de Vida</h3>
                         <p>
                             Recibe en tu correo todos los artículos publicados en el blog: análisis de las novelas de
-                            Stephen King, entrevistas y traducciones de textos propios del autor.
+                            M. E. Michel, entrevistas y traducciones de textos propios del autor.
                         </p>
                         <div class="row">
                             <div class="col-12">
@@ -143,8 +147,633 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section><br>
 
+
+        <div id="foto-mansion">
+            <img src="img/papel_roto.png" width="100%" alt="Papel roto"
+                style="position:absolute; top:0; left:0; z-index:9997;">
+            <img src="img/grad-negro.png" width="100%" alt="Gradiente negro"
+                style="position:absolute; bottom:0; left:0; z-index:9997;">
+
+            <img class="image-parallax" src="img/imgDeep.jpg" width="100%" alt="Libros">
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row g-xl-2">
+                    <div class="d-sm-none d-md-block col-xl-3"></div>
+                    <div class="col-12 col-sm-4 col-xl-2 mb-3">
+                        <h5>Secciones</h5>
+                        <ul>
+                            <li><a href="obras.html">Obras</a></li>
+                            <!-- <li><a href="https://stephenking.es/agenda/">Agenda</a></li> -->
+                            <li><a href="autor.html">El autor</a></li>
+                            <!-- <li><a href="https://stephenking.es/galeria/">Galería</a></li> -->
+                            <li><a href="https://stephenking.es/proyecto/">Proyecto</a></li>
+                        </ul>
+                    </div>
+                    <div class="d-sm-none d-md-block col-xl-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h5>Contacto y redes sociales</h5>
+                        <ul>
+                            <li>
+                                <a href="mailto:contacto@stephenking.es"><i class="fa-solid fa-envelope"></i></a>
+                                &nbsp;
+                                <!-- <a href="https://twitter.com/LeerStephenKing" target="_blank"><i
+									class="fa-brands fa-x-twitter"></i></a>
+							&nbsp; -->
+                                <a href="https://www.instagram.com/leerstephenking/" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                &nbsp;
+                                <a href="https://www.facebook.com/LeerStephenKing" target="_blank"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                &nbsp;
+                                <!-- <a href="https://www.youtube.com/LeerStephenKing" target="_blank"><i
+									class="fa-brands fa-youtube"></i></a> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="fila-copyright">
+                    <div class="col-12">
+                        <br><br>
+                        <p id="copyright" align="center">Desarrollado por P. Michel</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="javaScript/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/e9f4e427a4.js" crossorigin="anonymous"></script>
+        <!--<script src="fontawesome/a0edd2d250.js" crossorigin="anonymous"></script>-->
+        <script src="javaScript/owl.carousel.js"></script>
+        <script src="javaScript/funciones-ajax.js"></script>
+
+
+
+
+        <script>
+            function anclaMenuSidebar(id_destino, resto1, resto2, resto3) {
+
+                resto3 = resto3 || resto2 + 50;
+                var scroll = $(window).scrollTop();
+                if ($(window).width() > 768) {
+
+                    //alert(scroll);
+                    if (scroll < 136) {
+
+                        $('html, body').animate({
+                            scrollTop: $(id_destino).offset().top - resto1
+                        }, 50);
+
+                    } else {
+                        $('html, body').animate({
+                            scrollTop: $(id_destino).offset().top - resto2
+                        }, 50);
+                    }
+                } else {
+
+                    if (scroll < 136) {
+
+                        $('html, body').animate({
+                            scrollTop: $(id_destino).offset().top - resto1 - 50
+                        }, 50);
+                    } else {
+                        $('html, body').animate({
+                            scrollTop: $(id_destino).offset().top - resto3
+                        }, 50);
+                    }
+                }
+
+            }
+
+
+            $(document).ready(function () {
+                $("#estrellas .fa-star").hover(
+                    function () {
+
+                        for (var i = 1; i <= this.id; i++) {
+
+                            $("#estrellas #" + i).addClass("estrella-naranja");
+
+                        }
+                    }, function () {
+                        for (var i = 1; i <= this.id; i++) {
+                            $("#estrellas #" + i).removeClass("estrella-naranja");
+                        }
+                    }
+                );
+
+                $("#estrellas-movil .fa-star").hover(
+                    function () {
+
+                        for (var i = 1; i <= this.id; i++) {
+
+                            $("#estrellas-movil #" + i).addClass("estrella-naranja");
+
+                        }
+                    }, function () {
+                        for (var i = 1; i <= this.id; i++) {
+                            $("#estrellas-movil #" + i).removeClass("estrella-naranja");
+                        }
+                    }
+                );
+
+
+            });
+
+        </script>
+
+
+
+
+        <script>
+            // Cabecera fija al hacer scroll
+            jQuery("document").ready(function ($) {
+
+                var nav = $('header');
+
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 136) {
+
+                        if ($(window).width() < 768) {
+                            $('#navegacion-sidebar').addClass("sidebar-fijo");
+                        }
+
+                        if ($(window).width() > 768) {
+
+                            nav.addClass("cabecera-fija");
+
+
+                        }
+
+                    } else {
+                        nav.removeClass("cabecera-fija");
+                        $('#navegacion-sidebar').removeClass("sidebar-fijo");
+                    }
+                });
+
+
+
+                if ($(window).width() < 768) {
+                    $('#navegacion-sidebar').removeClass("menu-sticky");
+                    $('#navegacion-sidebar').addClass("menu-wrapper");
+                    $('#navegacion-sidebar').addClass("menu-wrapper--special");
+
+                } else {
+                    $('#navegacion-sidebar').removeClass("menu-wrapper");
+                    $('#navegacion-sidebar').removeClass("menu-wrapper--special");
+                    $('#navegacion-sidebar').addClass("menu-sticky");
+                }
+
+
+
+            });
+
+            // Menú hamburguesa para móvil
+            $(document).ready(function () {
+                $(".hamburger").click(function () {
+                    $(this).toggleClass("is-active");
+                    $('nav').fadeToggle(500);
+                });
+
+            });
+
+
+            $(document).ready(function () {
+
+                $('#owl-carousel-ediciones-espanol').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    lazyLoad: true,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 3,
+                            nav: false,
+                            loop: false
+                        },
+                        600: {
+                            items: 3,
+                            nav: false
+                        },
+                        768: {
+                            items: 4,
+                            nav: false,
+                            loop: false
+                        },
+                        1024: {
+                            items: 5,
+                            nav: false,
+                            loop: false
+                        },
+                        1280: {
+                            items: 6,
+                            nav: false,
+                            loop: false
+                        }
+                    }
+                });
+
+
+                $('#owl-carousel-publicaciones-ingles').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    lazyLoad: true,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 3,
+                            nav: false,
+                            loop: false
+                        },
+                        600: {
+                            items: 3,
+                            nav: false
+                        },
+                        768: {
+                            items: 4,
+                            nav: false,
+                            loop: false
+                        },
+                        1024: {
+                            items: 5,
+                            nav: false,
+                            loop: false
+                        },
+                        1280: {
+                            items: 6,
+                            nav: false,
+                            loop: false
+                        }
+                    }
+                });
+
+
+                $('#owl-carousel-obras-relacionadas').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    lazyLoad: true,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 3,
+                            nav: false,
+                            loop: false
+                        },
+                        600: {
+                            items: 3,
+                            nav: false
+                        },
+                        768: {
+                            items: 4,
+                            nav: false,
+                            loop: false
+                        },
+                        1024: {
+                            items: 5,
+                            nav: false,
+                            loop: false
+                        },
+                        1280: {
+                            items: 6,
+                            nav: false,
+                            loop: false
+                        }
+                    }
+                });
+
+
+                $('#owl-carousel-videos').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    lazyLoad: true,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            nav: false,
+                            loop: false
+                        },
+                        600: {
+                            items: 1,
+                            nav: false
+                        },
+                        1000: {
+                            items: 2,
+                            nav: false,
+                            loop: false
+                        }
+                    }
+                });
+
+
+                $('#owl-carousel-criticas').owlCarousel({
+                    loop: true,
+                    margin: 20,
+                    responsiveClass: true,
+                    autoHeight: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            nav: false,
+                            loop: false
+                        },
+                        600: {
+                            items: 1,
+                            nav: false
+                        },
+                        1000: {
+                            items: 2,
+                            nav: false,
+                            loop: false,
+                            margin: 40
+                        }
+                    }
+                });
+
+
+
+                $('#owl-carousel-adaptaciones').owlCarousel({
+                    loop: false,
+                    margin: 10,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 3,
+                            nav: false,
+                            loop: false
+                        },
+                        600: {
+                            items: 3,
+                            nav: false
+                        },
+                        768: {
+                            items: 4,
+                            nav: false,
+                            loop: false
+                        },
+                        1000: {
+                            items: 5,
+                            nav: false,
+                            loop: false
+                        },
+                        1280: {
+                            items: 6,
+                            nav: false,
+                            loop: false
+                        }
+                    }
+                });
+
+
+
+                $('#owl-carousel-bio-fotos').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    responsiveClass: true,
+                    lazyLoad: true,
+                    autoHeight: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            nav: false,
+                            loop: false
+                        },
+                        600: {
+                            items: 3,
+                            nav: false
+                        },
+                        1000: {
+                            items: 3,
+                            nav: false,
+                            loop: false
+                        }
+                    }
+                });
+
+
+                $('#owl-carousel-bio-videos').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    lazyLoad: true,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            nav: false,
+                            loop: false
+                        },
+                        600: {
+                            items: 1,
+                            nav: false
+                        },
+                        1000: {
+                            items: 2,
+                            nav: false,
+                            loop: false
+                        }
+                    }
+                });
+
+
+
+                $('#owl-carousel-insomnia-revistas').owlCarousel({
+                    loop: true,
+                    margin: 20,
+                    responsiveClass: true,
+                    lazyLoad: true,
+                    autoHeight: false,
+                    responsive: {
+                        0: {
+                            items: 2,
+                            nav: false,
+                            loop: false
+                        },
+                        600: {
+                            items: 2,
+                            nav: false
+                        },
+                        1000: {
+                            items: 3,
+                            nav: false,
+                            loop: false
+                        }
+                    }
+                });
+
+
+
+
+            });
+
+
+
+            $(document).ready(function () {
+                $('#resumen-box').expander({
+                    expandEffect: 'fadeIn',
+                    collapseEffect: 'fadeOut',
+                    expandText: '<b>Leer más</b>',
+                    userCollapseText: '<b>Leer menos</b>',
+                    slicePoint: 400,
+                });
+
+                $('#inspiracion-box').expander({
+                    expandEffect: 'fadeIn',
+                    collapseEffect: 'fadeOut',
+                    expandText: '<b>Leer más</b>',
+                    userCollapseText: '<b>Leer menos</b>',
+                    slicePoint: 600,
+                });
+            });
+
+
+
+
+            $(document).ready(function () {
+                var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+                var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                    return new bootstrap.Popover(popoverTriggerEl)
+                })
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                var image = document.getElementsByClassName('image-parallax');
+                new simpleParallax(image, {
+                    delay: .8,
+                    transition: 'cubic-bezier(0,0,0,1)'
+                });
+            });
+        </script>
+
+
+        <script src="javaScript/jquery.expander.js"></script>
+        <script src="javaScript/lightbox.js"></script>
+
+
+        <script id="rendered-js">
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 1516) {
+                    // number count for stats, using jQuery animate
+                    $('.counting').each(function () {
+                        var $this = $(this),
+                            countTo = $this.attr('data-count');
+
+                        $({ countNum: $this.text() }).animate(
+                            { countNum: countTo },
+                            {
+                                duration: 2000,
+                                easing: 'linear',
+                                step: function () {
+                                    $this.text(Math.floor(this.countNum));
+                                },
+                                complete: function () {
+                                    $this.text(this.countNum);
+                                }
+                            });
+                    });
+                }
+            });
+        </script>
+
+        <!-- 
+		******************************************************************************************************************
+		HOMESLIDER JAVASCRIPT
+		******************************************************************************************************************
+		-->
+        <script src='javaScript/swiper.min.js'></script>
+        <script>
+            // HERO SLIDER
+            var menu = [];
+            jQuery('.swiper-slide').each(function (index) {
+                menu.push(jQuery(this).find('.slide-inner').attr("data-text"));
+            });
+            var interleaveOffset = 0.5;
+            var swiperOptions = {
+                loop: true,
+                speed: 1000,
+                parallax: true,
+                autoplay: {
+                    delay: 6500,
+                    disableOnInteraction: false,
+                },
+                watchSlidesProgress: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                on: {
+                    progress: function () {
+                        var swiper = this;
+                        for (var i = 0; i < swiper.slides.length; i++) {
+                            var slideProgress = swiper.slides[i].progress;
+                            var innerOffset = swiper.width * interleaveOffset;
+                            var innerTranslate = slideProgress * innerOffset;
+                            swiper.slides[i].querySelector(".slide-inner").style.transform =
+                                "translate3d(" + innerTranslate + "px, 0, 0)";
+                        }
+                    },
+
+                    touchStart: function () {
+                        var swiper = this;
+                        for (var i = 0; i < swiper.slides.length; i++) {
+                            swiper.slides[i].style.transition = "";
+                        }
+                    },
+
+                    setTransition: function (speed) {
+                        var swiper = this;
+                        for (var i = 0; i < swiper.slides.length; i++) {
+                            swiper.slides[i].style.transition = speed + "ms";
+                            swiper.slides[i].querySelector(".slide-inner").style.transition =
+                                speed + "ms";
+                        }
+                    }
+                }
+            };
+
+            var swiper = new Swiper(".swiper-container", swiperOptions);
+
+            // DATA BACKGROUND IMAGE
+            var sliderBgSetting = $(".slide-bg-image");
+            sliderBgSetting.each(function (indx) {
+                if ($(this).attr("data-background")) {
+                    $(this).css("background-image", "url(" + $(this).data("background") + ")");
+                }
+            });
+
+
+
+
+            $(document).ready(function () {
+
+                var counter = 0;
+                var c = 0;
+                var i = setInterval(function () {
+                    $(".loading-page .counter h1").html(c + "%");
+                    $(".loading-page .counter hr").css("width", c + "%");
+
+                    counter++;
+                    c++;
+
+                    if (counter == 101) {
+                        clearInterval(i);
+                        $('.loading-page').fadeOut(200);
+
+                    }
+                }, 1);
+            });
+
+        </script>
 
     </body>
 
