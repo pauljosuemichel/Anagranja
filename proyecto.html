@@ -7,9 +7,9 @@
         content="El proyecto Leer Stephen King consiste en un espacio dedicado a la divulgación de la vida y la obra del escritor estadounidense Stephen King">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://stephenking.es/css/homeslider.css">
-    <link rel='stylesheet' href='https://stephenking.es/js/homeslider/swiper.min.css'>
-    <link rel="icon" type="image/x-icon" href="https://stephenking.es/img/favicon.png">
+    <link rel="stylesheet" href="home_css/homeslider.css">
+    <link rel='stylesheet' href='home_css/swiper.min.css'>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,11 +17,11 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://stephenking.es/js/owl.carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://stephenking.es/js/owl.carousel/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://stephenking.es/css/estilos.css">
-    <link rel="stylesheet" href="https://stephenking.es/css/efectos-hover.css">
-    <link href="https://stephenking.es/js/lightbox/src/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="home_css/carousel.min.css">
+    <link rel="stylesheet" href="home_css/theme.default.min.css">
+    <link rel="stylesheet" href="home_css/estilos.css">
+    <link rel="stylesheet" href="home_css/efectos.css">
+    <link href="home_css/lightbox.css" rel="stylesheet" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -29,25 +29,9 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <script src="https://stephenking.es/js/simpleParallax.min.js"></script>
-    <link rel="stylesheet" href="https://stephenking.es/css/obras.css">
-    <link rel="stylesheet" href="https://stephenking.es/css/obras-ficha.css">
-
-    <meta content="/proyecto/" property="og:url" />
-    <meta content="Proyecto Leer Stephen King" property="og:title" />
-    <meta
-        content="El proyecto Leer Stephen King consiste en un espacio dedicado a la divulgación de la vida y la obra del escritor estadounidense Stephen King"
-        property="og:description" />
-    <meta content="https://stephenking.es/img/card.jpg" property="og:image" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@LeerStephenKing" />
-    <meta name="twitter:creator" content="@LeerStephenKing" />
-    <meta name="twitter:title" content="Proyecto Leer Stephen King" />
-    <meta name="twitter:description"
-        content="El proyecto Leer Stephen King consiste en un espacio dedicado a la divulgación de la vida y la obra del escritor estadounidense Stephen King" />
-    <meta name="twitter:image:src" content="https://stephenking.es/img/card.jpg" />
-    <meta name="twitter:domain" content="https://stephenking.es/" />
+    <script src="javaScript/simpleParallax.js"></script>
+    <link rel="stylesheet" href="obras_css/obras.css">
+    <link rel="stylesheet" href="obras_css/obras-ficha.css">
 
     <style>
         /****************************************************/
@@ -276,64 +260,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-8 col-sm-3 col-lg-1">
-                    <p id="logotipo"><a href="https://stephenking.es/"><span id="stephen">STEPHEN</span><br><span
-                                id="king">KING</span></a></p>
+                    <p id="logotipo"><a href="home.html"><span id="stephen">CINCO</span><br><span
+                                id="king">ROBLES</span></a></p>
                 </div>
                 <div class="col-4 col-sm-9 col-lg-11 align-self-center">
                     <nav id="menu">
                         <ul>
-                            <li><a href="https://stephenking.es/obras/">OBRAS</a></li>
-                            <li><a href="https://stephenking.es/adaptaciones/">ADAPTACIONES</a></li>
-                            <li><a href="https://stephenking.es/agenda/">AGENDA</a></li>
-                            <li><a href="https://stephenking.es/el-autor/">EL AUTOR</a></li>
-                            <li><a href="https://stephenking.es/hitos/">HITOS</a></li>
-                            <li><a href="https://stephenking.es/galeria/">GALERÍA</a></li>
-                            <!--<li><a href="#">VÍDEOS</a></li>-->
-                            <!--<li><a href="">JUKEBOX</a></li>-->
-                            <li><a target="_blank" href="https://lazonamuerta.substack.com/">BLOG</a></li>
-                            <li><a href="https://stephenking.es/proyecto/">PROYECTO</a></li>
-                            <li><a target="_blank" href="https://kinglopedia.com/">KINGLOPEDIA</a></li>
-                            <!--<li><a href="">FAQ</a></li>-->
-                            <li id="menu-lupa-buscar"><a href="javascript:void(0)"
-                                    onclick="$('#franja-buscador').fadeToggle(200); document.getElementById('campo-texto-buscador').focus();"><i
-                                        class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><a href="obras.html">OBRAS</a></li>
+                            <!-- <li><a href="https://stephenking.es/agenda/">AGENDA</a></li> -->
+                            <li><a href="autor.html">EL AUTOR</a></li>
+                            <!-- <li><a href="https://stephenking.es/galeria/">GALERÍA</a></li> -->
+                            <li><a target="_blank" href="blog.html">BLOG</a></li>
+                            <li><a href="proyecto.html">PROYECTO</a></li>
                         </ul>
                     </nav>
 
-                    <div class="d-flex justify-content-end">
-
-                        <div id="lupa-buscar-movil" class="d-block d-lg-none">
-                            <a href="javascript:void(0)" onclick="$('#franja-buscador').fadeToggle(200)"><i
-                                    class="fa-solid fa-magnifying-glass"></i></a>
-                        </div>
-
-                        <div class="hamburger" id="hamburger-1">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>
     </header>
-    <div id="franja-buscador" class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <form id="formulario-buscar" action="https://stephenking.es/buscar/" method="GET">
-                    <input type="text" placeholder="¿Qué deseas buscar?" name="busqueda[texto]"
-                        id="campo-texto-buscador">
-                    &nbsp;
-                    <a href="javascript:void(0)" onclick="document.getElementById('formulario-buscar').submit()"><i
-                            class="fa-solid fa-arrow-right"></i></a>
-                </form>
-            </div>
-        </div>
-    </div>
     <section class="slider-seccion">
-        <img src="https://stephenking.es/img/slider-proyecto.jpg" width="100%"
-            alt="Slider del proyecto Leer Stephen King">
+        <img src="img/roble.jpg" width="100%" alt="Slider del proyecto Leer Stephen King">
     </section>
 
     <section id="el-proyecto">
@@ -349,46 +296,43 @@
                 <div class="col-12 col-xxl-10 offset-xxl-1">
 
                     <figure id="foto-king" class="figure float-md-start me-md-3 me-xl-4">
-                        <img src="https://stephenking.es/img/king-proyecto.jpg"
-                            class="figure-img img-fluid rounded float-end" alt="Retrato de Stephen King">
-                        <figcaption class="figure-caption text-end"><b>Stephen King</b> © Cody Smyth</figcaption>
+                        <img src="img/slide1.jpg" class="figure-img img-fluid rounded float-end"
+                            alt="Retrato de Stephen King">
+                        <figcaption class="figure-caption text-end"><b>Michel</b> © Paul Michel</figcaption>
                     </figure>
 
                     <p>
-                        En esencia, el proyecto <i>Leer Stephen King</i> consiste en un espacio dedicado a la
-                        divulgación de la vida y la obra del escritor estadounidense Stephen King. Un lugar donde los
-                        apasionados de su obra puedan encontrar toda clase de información relacionada con el autor.
-                        Fundado por Óliver Mayorga, el proyecto tuvo su origen en las redes sociales con la creación de
-                        la cuenta de Twitter <a href="https://twitter.com/LeerStephenKing"><u>@LeerStephenKing</u></a>
-                        en diciembre de 2020. Desde entonces, ha ido creciendo y encontrando nuevas vías por las que
-                        llegar a los aficionados.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cum iusto unde repudiandae.
+                        Odit vero laboriosam consectetur, iste doloribus nam aperiam ipsa animi omnis repudiandae fugit
+                        delectus debitis nesciunt perspiciatis?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cum iusto unde repudiandae.
+                        Odit vero laboriosam consectetur, iste doloribus nam aperiam ipsa animi omnis repudiandae fugit
+                        delectus debitis nesciunt perspiciatis?
                     </p>
                     <p>
-                        Uno de los objetivos fundamentales del proyecto es dar a conocer las historias de King a quienes
-                        todavía no se hayan atrevido a leerlas. Si aún no habéis leído ningún libro de Stephen King o
-                        tan solo os habéis acercado tímidamente a su obra, consideraos afortunados, porque os espera un
-                        vasto y maravilloso mundo por descubrir. Por otro lado, también se pretende captar la atención
-                        del Lector Constante por medio de contenidos que le ayuden a contextualizar sus lecturas. Sobre
-                        esto último resultan especialmente útiles las entrevistas y artículos traducidos que ofrecemos,
-                        y que aportan información muy interesante sobre el proceso de creación de las distintas
-                        historias.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cum iusto unde repudiandae.
+                        Odit vero laboriosam consectetur, iste doloribus nam aperiam ipsa animi omnis repudiandae fugit
+                        delectus debitis nesciunt perspiciatis?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cum iusto unde repudiandae.
+                        Odit vero laboriosam consectetur, iste doloribus nam aperiam ipsa animi omnis repudiandae fugit
+                        delectus debitis nesciunt perspiciatis?
                     </p>
 
-                    <p>Este proyecto está conformado por tres apartados principales: el sitio web <a
-                            href="https://stephenking.es/">stephenking.es</a>, el blog <i>La zona muerta</i> y la
-                        actividad en nuestras diversas redes sociales (<a
-                            href="https://twitter.com/LeerStephenKing"><u>Twitter</u></a>, <a
-                            href="https://www.instagram.com/leerstephenking/"><u>Instagram</u></a>, <a
-                            href="https://www.facebook.com/LeerStephenKing"><u>Facebook</u></a> y <a
-                            href="https://www.youtube.com/LeerStephenKing"><u>YouTube</u></a>). Mientras que el sitio
-                        web funciona a modo de punto de referencia donde hallar toda la información que buscas sobre
-                        King (al menos, esa es nuestra intención), y en el blog se podrá disfrutar de una amplia
-                        selección de artículos y entrevistas, las redes sociales las empleamos para entablar contacto
-                        con los lectores y ofrecer, entre otras cosas, toda la actualidad concerniente a los proyectos
-                        de Stephen King.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cum iusto unde repudiandae.
+                        Odit vero laboriosam consectetur, iste doloribus nam aperiam ipsa animi omnis repudiandae fugit
+                        delectus debitis nesciunt perspiciatis?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cum iusto unde repudiandae.
+                        Odit vero laboriosam consectetur, iste doloribus nam aperiam ipsa animi omnis repudiandae fugit
+                        delectus debitis nesciunt perspiciatis?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cum iusto unde repudiandae.
+                        Odit vero laboriosam consectetur, iste doloribus nam aperiam ipsa animi omnis repudiandae fugit
+                        delectus debitis nesciunt perspiciatis?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cum iusto unde repudiandae.
+                        Odit vero laboriosam consectetur, iste doloribus nam aperiam ipsa animi omnis repudiandae fugit
+                        delectus debitis nesciunt perspiciatis?</p>
 
-                    <p>Disfrutad de la lectura y recomendad siempre libros de Stephen King a vuestros amigos y
-                        conocidos.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus laborum tenetur non optio
+                        fugiat est perferendis!</p>
 
                 </div>
             </div>
@@ -398,7 +342,7 @@
     <div id="equipo" class="row-fluid m-0">
         <div class="container">
             <div class="col-12 align-self-center">
-                <h2>El equipo</h2>
+                <h2>El desarrollador</h2>
                 <h3>LOS COLABORADORES</h3>
             </div>
         </div>
@@ -408,38 +352,16 @@
         <div class="row g-0">
 
             <div class="col-12 col-lg-2" id="col-oliver">
-                <img class="image-parallax" src="https://stephenking.es/img/oliver.jpg" width="100%">
+                <img class="image-parallax" src="img/imagen_vacia.jpg" width="100%">
             </div>
 
             <div id="oliver-bio" class="col-bio col-12 col-lg-2">
                 <div class="mt-5">
-                    <h4 align="center">Óliver Mayorga</h4>
+                    <h4 align="center">Paul Michel</h4>
                     <h5 align="center">Fundador</h5>
                     <p align="center"><a style="color:#fff !important" href="https://twitter.com/WrittenByOliver"
                             target="_blank"><i class="fa-brands fa-x-twitter"></i></a></p>
                 </div>
-            </div>
-
-
-            <div class="col-12 col-lg-2" id="col-javier">
-                <img class="image-parallax" src="https://stephenking.es/img/javier.jpg" width="100%">
-            </div>
-            <div class="col-bio col-12 col-lg-2">
-                <h4 align="center" style="color:#000">Javier Martos</h4>
-                <h5 align="center" style="color:#000">Colaborador</h5>
-                <p align="center"><a style="color:#000 !important" href="https://twitter.com/m4rtos" target="_blank"><i
-                            class="fa-brands fa-x-twitter"></i></a></p>
-            </div>
-
-
-            <div class="col-12 col-lg-2" id="col-diego">
-                <img class="image-parallax" src="https://stephenking.es/img/diego.jpg" width="100%">
-            </div>
-            <div id="diego-bio" class="col-bio col-12 col-lg-2">
-                <h4 align="center">Diego Munguia</h4>
-                <h5 align="center">Colaborador</h5>
-                <p align="center"><a style="color:#fff !important" href="https://twitter.com/DAMunguiaFuent1"
-                        target="_blank"><i class="fa-brands fa-x-twitter"></i></a></p>
             </div>
 
         </div>
@@ -481,7 +403,7 @@
             <div class="row">
                 <div class="col-12">
                     <h2>El sitio web</h2>
-                    <h3>STEPHENKING.ES</h3>
+                    <h3>5ROBLES.ES</h3>
                 </div>
             </div>
             <div class="row  align-self-center">
@@ -525,24 +447,23 @@
             </div>
             <div class="row align-self-center">
                 <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 offset-xl-0 offset-xxl-1">
-                    <a href="https://lazonamuerta.substack.com/" target="_blank">
-                        <img src="https://stephenking.es/img/lazonamuerta.png" width="100%"
+                    <a href="https://marceloericmichel.blogspot.com/" target="_blank">
+                        <img src="img/anagranjaPortada.jpg" width="100%"
                             style="width:100%; max-width:600px; margin:auto" alt="Logo del blog La zona muerta">
                     </a>
                 </div>
                 <div class="col-12 col-lg-8 col-xl-8 col-xxl-6 align-self-center">
                     <p>
-                        <i>La zona muerta</i> es un blog/boletín donde hallarás un amplio archivo de artículos, pasados
-                        y recientes, escritos por Stephen King, además de entrevistas realizadas al autor. Y todo
-                        traducido al español. Este material, la mayor parte inédito en nuestro idioma, ayuda a
-                        contextualizar las obras de King y a conocer más sobre la vida del escritor de Maine.
+                        <i>Relatos de vida</i> ipsum dolor sit amet, consectetur adipisicing elit. Aut, repellendus
+                        molestiae. Laudantium
+                        consequatur eius explicabo labore molestias veniam blanditiis at odio. Unde quos corporis
+                        molestiae culpa consectetur eius in explicabo!
                     </p>
-                    <p>Está integrado en la plataforma Substack, cuya funcionalidad permite el envío de todas las
-                        publicaciones vía correo electrónico a todos los usuarios que se suscriban. La suscripción es
-                        completamente gratuita, por lo que si aún no te has suscrito, hazlo y no te pierdas ninguna
-                        publicación.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, repellendus molestiae. Laudantium
+                        consequatur eius explicabo labore molestias veniam blanditiis at odio. Unde quos corporis
+                        molestiae culpa consectetur eius in explicabo!</p>
                     <br>
-                    <p align="left"><a href="https://lazonamuerta.substack.com/" target="_blank"
+                    <p align="left"><a href="https://marceloericmichel.blogspot.com/" target="_blank"
                             class="boton boton-transparente"><i class="fas fa-chevron-circle-right"></i> IR AL BLOG</a>
                     </p>
                 </div>
@@ -556,7 +477,7 @@
             <div class="row">
                 <div class="col-12">
                     <h2>Redes sociales</h2>
-                    <h3>TWITTER, INSTAGRAM, FACEBOOK…</h3>
+                    <h3>INSTAGRAM, FACEBOOK…</h3>
                 </div>
             </div>
             <div class="row">
@@ -584,28 +505,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-xl-8 offset-xl-2">
-                    <img src="https://stephenking.es/img/lazonamuerta.png"
-                        alt="«La zona muerta», el blog de stephenking.es">
-                    <!--<h2>Suscríbete a</h2>
-				<h3>La zona muerta</h3>-->
+                    <h2>Suscríbete a</h2>
+                    <h3>Relatos de Vida</h3>
                     <p>
                         Recibe en tu correo todos los artículos publicados en el blog: análisis de las novelas de
                         Stephen King, entrevistas y traducciones de textos propios del autor.
                     </p>
-                    <iframe loading="lazy" src="https://lazonamuerta.substack.com/embed" width="100%" height="120"
-                        frameborder="0" scrolling="no"></iframe>
+                    <div class="row">
+                        <div class="col-12">
+                            <p align="center"><br><br><br><a href="https://marceloericmichel.blogspot.com/"
+                                    class="boton boton-transparente"><i class="fas fa-chevron-circle-right"></i> Ir al
+                                    blog</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <div id="foto-mansion">
-        <img src="https://stephenking.es/img/papel.png" width="100%" alt="Papel roto"
+        <img src="img/papel_roto.png" width="100%" alt="Papel roto"
             style="position:absolute; top:0; left:0; z-index:9997;">
-        <img src="https://stephenking.es/img/grad-negro.png" width="100%" alt="Gradiente negro"
+        <img src="img/grad-negro.png" width="100%" alt="Gradiente negro"
             style="position:absolute; bottom:0; left:0; z-index:9997;">
 
-        <img class="image-parallax" src="https://stephenking.es/img/pie.webp" width="100%"
-            alt="La mansión de la familia King en Bangor, Maine.">
+        <img class="image-parallax" src="img/imgDeep.jpg" width="100%" alt="Libros">
     </div>
     <footer>
         <div class="container">
@@ -615,76 +538,50 @@
                     <h5>Secciones</h5>
                     <ul>
                         <li><a href="https://stephenking.es/obras/">Obras</a></li>
-                        <li><a href="https://stephenking.es/adaptaciones/">Adaptaciones</a></li>
-                        <li><a href="https://stephenking.es/agenda/">Agenda</a></li>
+                        <!-- <li><a href="https://stephenking.es/agenda/">Agenda</a></li> -->
                         <li><a href="https://stephenking.es/el-autor/">El autor</a></li>
-                        <li><a href="https://stephenking.es/hitos/">Hitos</a></li>
-                        <li><a href="https://stephenking.es/galeria/">Galería</a></li>
+                        <!-- <li><a href="https://stephenking.es/galeria/">Galería</a></li> -->
                         <li><a href="https://stephenking.es/proyecto/">Proyecto</a></li>
-                        <li><a href="https://stephenking.es/faq/">FAQ</a></li>
                     </ul>
                 </div>
-                <div class="col-12 col-sm-4 col-xl-2 mb-3">
-                    <h5>Blog</h5>
-                    <ul>
-                        <li><a href="https://lazonamuerta.substack.com/s/analisis">Análisis</a></li>
-                        <li><a href="https://lazonamuerta.substack.com/s/resenas">Reseñas</a></li>
-                        <li><a href="https://lazonamuerta.substack.com/s/entrevistas">Entrevistas</a></li>
-                        <li><a href="https://lazonamuerta.substack.com/s/por-stephen-king">Por Stephen King</a></li>
-                        <li><a href="https://lazonamuerta.substack.com/s/the-pop-of-king">The Pop of King</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-4 col-xl-2 mb-3">
-                    <h5>Privacidad y créditos</h5>
-                    <ul>
-                        <li><a href="https://stephenking.es/cookies/">Política de <i>cookies</i></a></li>
-                        <li><a href="https://stephenking.es/agradecimientos/">Agradecimientos</a></li>
-                    </ul>
-                </div>
-                <div class="d-sm-none d-md-block col-xl-3"></div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <h5>Contacto y redes sociales</h5>
-                    <ul>
-                        <li>
-                            <a href="mailto:contacto@stephenking.es"><i class="fa-solid fa-envelope"></i></a>
-                            &nbsp;
-                            <a href="https://twitter.com/LeerStephenKing" target="_blank"><i
-                                    class="fa-brands fa-x-twitter"></i></a>
-                            <!--&nbsp;
-						<a href="https://www.instagram.com/leerstephenking/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-						&nbsp;
-						<a href="https://www.facebook.com/LeerStephenKing" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-						&nbsp;
-						<a href="https://www.youtube.com/LeerStephenKing" target="_blank"><i class="fa-brands fa-youtube"></i></a>-->
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row" id="fila-copyright">
-                <div class="col-12">
-                    <br>
-                    <a href="https://stephenking.es/proyecto/">
-                        <img src="https://stephenking.es/img/logo-leer-sk-2023.png" width="290" alt="Leer Stephen King">
-                    </a>
-                    <br><br>
-                    <p class="claim">
-                        Todas las imágenes utilizadas en este sitio web pertenecen a sus respectivos autores. No se
-                        pretende infringir la propiedad intelectual de los mismos, solo ilustrar el contenido del sitio
-                        web.
-                    </p>
 
-                    <p id="copyright" align="center">StephenKing.es ©2022-2024</p>
+                <div class="row">
+                    <div class="col-12">
+                        <h5>Contacto y redes sociales</h5>
+                        <ul>
+                            <li>
+                                <a href="mailto:contacto@stephenking.es"><i class="fa-solid fa-envelope"></i></a>
+                                &nbsp;
+                                <!-- <a href="https://twitter.com/LeerStephenKing" target="_blank"><i
+                                        class="fa-brands fa-x-twitter"></i></a>
+                                &nbsp; -->
+                                <a href="https://www.instagram.com/leerstephenking/" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                &nbsp;
+                                <a href="https://www.facebook.com/LeerStephenKing" target="_blank"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <!-- &nbsp;
+                                <a href="https://www.youtube.com/LeerStephenKing" target="_blank"><i
+                                        class="fa-brands fa-youtube"></i></a> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="fila-copyright">
+                    <div class="col-12">
+                        <br>
+                        <br><br>
+
+                        <p id="copyright" align="center">Desarrollado por P. Michel</p>
+                    </div>
                 </div>
             </div>
-        </div>
     </footer>
-    <script src="https://stephenking.es/js/jquery.min.js"></script>
+    <script src="javaScript/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/e9f4e427a4.js" crossorigin="anonymous"></script>
     <!--<script src="fontawesome/a0edd2d250.js" crossorigin="anonymous"></script>-->
-    <script src="https://stephenking.es/js/owl.carousel/owl.carousel.js"></script>
-    <script src="https://stephenking.es/js/funciones-ajax.js"></script>
+    <script src="javaScript/owl.carousel.js"></script>
+    <script src="javaScript/funciones-ajax.js"></script>
 
 
 
@@ -1125,33 +1022,9 @@
     </script>
 
 
-    <script src="https://stephenking.es/js/jquery.expander.js"></script>
-    <script src="https://stephenking.es/js/lightbox/src/js/lightbox.js"></script>
+    <script src="javaScript/jquery.expander.js"></script>
+    <script src="javaScript/lightbox.js"></script>
 
-
-    <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-    <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js"
-        charset="UTF-8"></script>
-    <script type="text/javascript" charset="UTF-8">
-        document.addEventListener('DOMContentLoaded', function () {
-            cookieconsent.run({ "notice_banner_type": "headline", "consent_type": "express", "palette": "light", "language": "es", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "StephenKing.es", "website_privacy_policy_url": "https://stephenking.es/cookies" });
-        });
-    </script>
-
-    <!-- Google Analytics -->
-    <script type="text/plain" cookie-consent="tracking" async
-        src="https://www.googletagmanager.com/gtag/js?id=G-V4TPLRRY91"></script>
-    <script type="text/plain" cookie-consent="tracking">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-V4TPLRRY91');
-</script>
-    <!-- end of Google Analytics-->
-
-    <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/"
-            rel="nofollow noopener">TermsFeed Policy Generator</a></noscript>
-    <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
 </body>
 
 </html>
